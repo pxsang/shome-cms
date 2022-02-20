@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # Building app
-RUN npm run build
+RUN NODE_ENV=production npm run build
 
 # Running the app
 CMD [ "npm", "start" ]
