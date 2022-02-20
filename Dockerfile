@@ -1,4 +1,4 @@
-FROM node:12.16-slim
+FROM node:14.19
 
 # Setting working directory. All the path will be relative to WORKDIR
 WORKDIR /usr/src/app
@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # Building app
-RUN npm run build
+RUN NODE_ENV=production npm run build
 
 # Running the app
 CMD [ "npm", "start" ]
