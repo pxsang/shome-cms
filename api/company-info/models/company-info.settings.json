@@ -33,6 +33,9 @@
     "hotline": {
       "type": "string",
       "required": true
+    },
+    "showroom_address": {
+      "type": "string"
     }
   }
 }
